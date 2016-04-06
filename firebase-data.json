@@ -1,0 +1,96 @@
+{
+  "restaurants": [{
+    "name": "Brunch Box",
+    "location": "620 SW 9th Ave, Portland OR",
+    "cuisine": "American",
+    "pricerange": "$$"
+    },{
+    "name": "Screen Door",
+    "location": "2337 E Burnside St, Portland OR",
+    "cuisine": "Southern",
+    "pricerange": "$$"
+    },{
+    "name": "Santeria",
+    "location": "703 SW Ankeny, Portland OR",
+    "cuisine": "Mexican",
+    "pricerange": "$"
+    },{
+    "name": "Mama Mia Trattoria",
+    "location": "439 SW 2nd Ave, Portland OR",
+    "cuisine": "Italian",
+    "pricerange": "$$$"
+    },{
+    "name": "Wolf & Bear's",
+    "location": "502 SW 10th, Portland OR",
+    "cuisine": "Middle Eastern",
+    "pricerange": "$$"
+    }],
+  "dishes": [{
+    "name": "Enchiladas",
+    "price": 9,
+    "description": "Homemade verde or Enchilada sauce covered in melted cheese and topped with sour cream",
+    "restaurant": 2,
+    "rating": [3,4,3]
+  },{
+    "name": "Cochinita Burrito",
+    "price": 8.5,
+    "description": "Cochinita, rice, black beans, pickled red onions, and radish habanero salsa",
+    "restaurant": 2,
+    "rating": [3,4,3]
+    },{
+    "name": "Vegan Taco",
+    "price": 2.5,
+    "description": "Rice, black beans, lettuce, pico de gallo, and guacamole",
+    "restaurant": 2,
+    "rating": [3,4,3]
+    },{
+    "name": "Falafel Wrap",
+    "price": 8,
+    "description": "Hummus, falafel, caramelized onions, roasted red peppers, grilled eggplant, parsley, and salad greens with tahini sauce on a warm pita. Served with a side of pickles and green Skhoog hot sauce. Vegan. Vegetarian. Gluten free upon request.",
+    "restaurant": 4,
+    "rating": [3,4,3]
+    },{
+    "name": "Gorg Salad",
+    "price": 7.5,
+    "description": "Gorgonzola crumbles, caramelized walnuts, raisins, red onion, red peppers, shredded beet and carrot on mesclun greens with house balsamic vinaigrette. Vegetarian. Gluten-free.",
+    "restaurant": 4,
+    "rating": [3,4,3]
+    },{
+    "name": "Redonkadonk",
+    "price": 14,
+    "description": "An OMG burger with two grilled cheese sandwiches instead of a bun.",
+    "restaurant": 0,
+    "rating": [3,4,3]
+    },{
+    "name": "Black & Bleu",
+    "price": 6.75,
+    "description": "Bacon, sausage, bleu cheese, grilled onions, fried egg & blackening spice.",
+    "restaurant": 0,
+    "rating": [3,4,3]
+    },{
+    "name": "Crispy Fried Buttermilk-battered Chicken",
+    "price": 15.75,
+    "description": "w/ tasso ham gravy, mashed potatoes & collards",
+    "restaurant": 0,
+    "rating": [3,4,3]
+    },{
+    "name": "Backyard Burger",
+    "price": 10.5,
+    "description": "10 oz. of cascade natural ground sirloin w/ cheddar, savory tomato jam, lettuce, onion, & side of fries",
+    "restaurant": 0,
+    "rating": [3,4,3]
+    },{
+    "name": "Pasta Primavera",
+    "price": 18.95,
+    "description": "Spaghetti pasta with garden fresh asparagus, zucchini, carrots, sweet peas, crimini mushrooms, broccoli, grape tomatoes & finished with sweet cream.",
+    "restaurant": 3,
+    "rating": [3,4,3]
+    },{
+    "name": "Linguine Carbonara",
+    "price": 18.95,
+    "description": "Pasta tossed with pancetta (Italian bacon), onions, egg, cream, parmigiano reggiano & pecorino romano cheeses.",
+    "restaurant": 3,
+    "rating": [3,4,3]
+    }
+  ]
+}
