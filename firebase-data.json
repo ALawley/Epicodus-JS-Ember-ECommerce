@@ -3,27 +3,32 @@
     "name": "Brunch Box",
     "location": "620 SW 9th Ave, Portland OR",
     "cuisine": "American",
-    "pricerange": "$$"
+    "pricerange": "$$",
+    "dishes": {}
     },{
     "name": "Screen Door",
     "location": "2337 E Burnside St, Portland OR",
     "cuisine": "Southern",
-    "pricerange": "$$"
+    "pricerange": "$$",
+    "dishes": {}
     },{
     "name": "Santeria",
     "location": "703 SW Ankeny, Portland OR",
     "cuisine": "Mexican",
-    "pricerange": "$"
+    "pricerange": "$",
+    "dishes": {}
     },{
     "name": "Mama Mia Trattoria",
     "location": "439 SW 2nd Ave, Portland OR",
     "cuisine": "Italian",
-    "pricerange": "$$$"
+    "pricerange": "$$$",
+    "dishes": {}
     },{
     "name": "Wolf & Bear's",
     "location": "502 SW 10th, Portland OR",
     "cuisine": "Middle Eastern",
-    "pricerange": "$$"
+    "pricerange": "$$",
+    "dishes": {}
     }],
   "dishes": [{
     "name": "Enchiladas",
