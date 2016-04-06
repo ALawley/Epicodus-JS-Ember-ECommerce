@@ -1,0 +1,25 @@
+<div class="edit-dish">
+    {{#if editDish}}
+    <h1>Edit Dish</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          {{input value=dish.name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price:</label>
+          {{input value=dish.price id="price"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+          {{input value=dish.description id="description"}}
+        </div>
+
+        <button class="btn btn-primary" {{action 'editDish1' dish}}>Save</button>
+      </form>
+  {{else}}
+    <button class="btn btn-primary" {{action 'editDishShow'}}>Edit dish</button>
+  {{/if}}
+</div>

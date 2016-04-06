@@ -24,6 +24,14 @@ export default Ember.Route.extend({
     },
     deleteDish(dish){
       dish.destroyRecord();
+    },
+    editDish5(dish, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          dish.set(key,params[key]);
+        }
+      });
+      dish.save();
     }
   }
 });

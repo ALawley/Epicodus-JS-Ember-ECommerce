@@ -1,0 +1,30 @@
+<div class="edit-restaurant">
+    {{#if editRestaurant}}
+    <h1>Edit Restaurant</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          {{input value=restaurant.name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="cuisine">Cuisine:</label>
+          {{input value=restaurant.cuisine id="cuisine"}}
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location:</label>
+          {{input value=restaurant.location id="location"}}
+        </div>
+
+        <div class="form-group">
+          <label for="pricerange">Price Range:</label>
+          {{input value=restaurant.pricerange id="pricerange"}}
+        </div>
+
+        <button class="btn btn-primary" {{action 'editRestaurant1' restaurant}}>Save</button>
+      </form>
+  {{else}}
+    <button class="btn btn-primary" {{action 'editRestaurantShow'}}>Edit restaurant</button>
+  {{/if}}
+</div>
