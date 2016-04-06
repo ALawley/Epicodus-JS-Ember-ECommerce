@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     restaurantFormShow(){
       this.set('addNewRestaurant', true);
     },
-    save1(){
+    saveRestaurant1(){
       var params = {
         name: this.get('name') ? this.get('name') : "",
         location: this.get('location') ? this.get('location') : "",
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         pricerange: this.get('pricerange') ? this.get('pricerange') : ""
       }
       this.set('addNewRestaurant', false);
-      this.sendAction('save2', params);
+      this.sendAction('saveRestaurant2', params);
     }
   }
 });

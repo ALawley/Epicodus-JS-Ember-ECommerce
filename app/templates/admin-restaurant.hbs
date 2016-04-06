@@ -1,0 +1,7 @@
+<h3>{{model.name}}</h3>
+
+{{#each model.dishes as |dish|}}
+  {{dish-admin-tile dish=dish}}
+{{/each}}
+
+{{new-dish restaurant=model save2="save3"}}

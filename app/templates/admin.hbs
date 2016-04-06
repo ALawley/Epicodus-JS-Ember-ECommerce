@@ -1,1 +1,6 @@
-{{outlet}}
+{{#each model as |restaurant|}}
+  {{restaurant-admin-tile restaurant=restaurant}}
+{{/each}}
+
+
+{{new-restaurant saveRestaurant2="saveRestaurant3"}}
