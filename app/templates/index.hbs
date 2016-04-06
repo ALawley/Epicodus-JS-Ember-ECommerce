@@ -1,1 +1,5 @@
-{{outlet}}
+<h1>Restaurants</h1>
+
+{{#each model as |restaurant|}}
+  {{restaurant-tile restaurant=restaurant}}
+{{/each}}
