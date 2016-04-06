@@ -1,7 +1,10 @@
 <h3>{{model.name}}</h3>
 
 {{#each model.dishes as |dish|}}
-  {{dish-admin-tile dish=dish}}
+  {{dish-admin-tile dish=dish deleteDish="deleteDish"}}
 {{/each}}
 
-{{new-dish restaurant=model save2="save3"}}
+{{new-dish restaurant=model saveDish2="saveDish3"}}
+
+<button {{action 'deleteRestaurant' model}}>Delete Restaurant</button>
+{{#link-to 'admin'}}<button>Back to Admin Index</button>{{/link-to}}

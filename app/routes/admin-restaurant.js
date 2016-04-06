@@ -12,6 +12,18 @@ export default Ember.Route.extend({
       newDish.save().then(function() {
         return restaurant.save();
       });
+    },
+    deleteRestaurant(restaurant){
+      var dishDeletions = restaurant.get('dishes').map(function(dish) {
+        return dish.destroyRecord();
+      });
+      Ember.RSVP.all(dishDeletions).then(function() {
+        return restaurant.destroyRecord();
+      });
+      this.transitionTo('admin');
+    },
+    deleteDish(dish){
+      dish.destroyRecord();
     }
   }
 });
