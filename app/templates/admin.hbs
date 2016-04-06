@@ -1,6 +1,11 @@
-{{#each model as |restaurant|}}
+<div class="col-md-4">
+  {{#each model as |restaurant|}}
   {{restaurant-admin-tile restaurant=restaurant editRestaurant3="editRestaurant4"}}
-{{/each}}
+  {{/each}}
 
+</div>
 
-{{new-restaurant saveRestaurant2="saveRestaurant3"}}
+<div class="col-md-8">
+  {{new-restaurant saveRestaurant2="saveRestaurant3"}}
+
+</div>

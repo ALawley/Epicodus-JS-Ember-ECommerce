@@ -1,14 +1,14 @@
-<h1>Restaurants</h1>
+<div class="col-md-8">
+  <h1>Restaurants</h1>
 
-{{#each model as |restaurant|}}
+  {{#each model as |restaurant|}}
   {{restaurant-tile restaurant=restaurant}}
-{{/each}}
+  {{/each}}
 
-<hr>
-{{display-cart}}
-<hr>
+</div>
+<div class="col-md-4">
+  {{display-cart}}
+</div>
 
 
-
-
-{{#link-to 'admin'}}<button>Admin</button>{{/link-to}}
+{{#link-to 'admin'}}<button class="admin-button">Admin</button>{{/link-to}}

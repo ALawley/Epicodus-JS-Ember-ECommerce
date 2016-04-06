@@ -3,7 +3,7 @@
     <h4>{{dish.name}}</h4>
   </div>
   <div class="col-sm-4">
-    <h4>{{dish.price}}</h4>
+    <h4>${{dish.price}}</h4>
   </div>
 </div>
 <div class="row">
@@ -15,7 +15,6 @@
   </div>
 </div>
 <div class="row">
-  <button type="button" name="addToCart" class="btn btn-primary" {{action 'addToCart' dish}}>Add To Cart</button>
-
-
+  <button type="button" name="addToCart" class="btn btn-primary add-to-cart" {{action 'addToCart' dish}}>Add To Cart</button>
 </div>
+<hr>

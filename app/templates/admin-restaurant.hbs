@@ -5,6 +5,7 @@
 {{/each}}
 
 {{new-dish restaurant=model saveDish2="saveDish3"}}
+<hr>
+<button class="btn btn-primary" {{action 'deleteRestaurant' model}}>Delete Restaurant</button>
 
-<button {{action 'deleteRestaurant' model}}>Delete Restaurant</button>
-{{#link-to 'admin'}}<button>Back to Admin Index</button>{{/link-to}}
+{{#link-to 'admin'}}<button class="btn btn-primary">Back to Admin Index</button>{{/link-to}}

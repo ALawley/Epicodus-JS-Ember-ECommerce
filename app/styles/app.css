@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.admin-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cart-name {
+  float: left;
+}
+
+.cart-price {
+  float: right;
+}
+
+.add-to-cart {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.cart-item {
+  clear: both;
+}
