@@ -3,6 +3,7 @@
 {{#each shoppingCart.items as |item|}}
   <div class="cart-item">
     <h3 class="cart-name">{{item.name}}</h3> <h3 class="cart-price">${{item.price}}</h3>
+    <button class="btn btn-sm btn-danger remove-button" {{action 'remove' item}}>X</button>
   </div>
 {{/each}}
 {{#if totalDisplay}}
