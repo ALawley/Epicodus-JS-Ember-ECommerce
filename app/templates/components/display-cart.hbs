@@ -1,7 +1,8 @@
 <h1>Shopping Cart</h1>
 <hr>
 {{#each shoppingCart.items as |item|}}
-  <div class="cart-item">  
+  <div class="cart-item">
     <h3 class="cart-name">{{item.name}}</h3> <h3 class="cart-price">${{item.price}}</h3>
   </div>
 {{/each}}
+<h3 class="total">Total: ${{cartTotal}}</h3>
