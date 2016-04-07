@@ -12,5 +12,12 @@ export default Ember.Component.extend({
     return parseFloat(Math.round(totalPrice * 100) /100).toFixed(2);
   }),
 
+  totalDisplay: Ember.computed('shoppingCart.items.length', function() {
+    if (this.get('shoppingCart.items.length') > 0) {
+      return true;
+    }
+    return false;
+  }),
+
   shoppingCart: Ember.inject.service(),
 });

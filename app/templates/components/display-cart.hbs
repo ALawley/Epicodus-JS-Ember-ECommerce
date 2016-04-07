@@ -5,4 +5,8 @@
     <h3 class="cart-name">{{item.name}}</h3> <h3 class="cart-price">${{item.price}}</h3>
   </div>
 {{/each}}
-<h3 class="total">Total: ${{cartTotal}}</h3>
+{{#if totalDisplay}}
+<div class="total-contain">
+  <h3 class="total">Total: ${{cartTotal}}</h3>
+</div>
+{{/if}}

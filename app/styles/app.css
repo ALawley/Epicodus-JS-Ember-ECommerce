@@ -24,10 +24,12 @@ a:hover {
 .cart-name {
   float: left;
   max-width: 70%;
+  margin-top: 10px;
 }
 
 .cart-price {
   float: right;
+  margin-top: 10px;
 }
 
 .add-to-cart {
