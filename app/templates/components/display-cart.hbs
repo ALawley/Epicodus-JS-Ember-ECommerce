@@ -1,9 +1,9 @@
 <h1>Shopping Cart</h1>
 <hr>
-{{#each shoppingCart.items as |item|}}
+{{#each shoppingCart.items as |item index|}}
   <div class="cart-item">
-    <h3 class="cart-name">{{item.name}}</h3> <h3 class="cart-price">${{item.price}}</h3>
-    <button class="btn btn-sm btn-danger remove-button" {{action 'remove' item}}>X</button>
+    <h3 class="cart-name">{{item.quantity}}{{item.name}}</h3> <h3 class="cart-price">${{item.price}}</h3>
+    <button class="btn btn-sm btn-danger remove-button" {{action 'remove' index}}>X</button>
   </div>
 {{/each}}
 {{#if totalDisplay}}

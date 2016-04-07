@@ -6,7 +6,6 @@ export default Ember.Component.extend({
     var totalPrice = 0;
     items.forEach(function(item) {
       var price = parseFloat(parseFloat(item.get('price')).toFixed(2));
-      console.log(price);
       totalPrice += price;
     });
     return parseFloat(Math.round(totalPrice * 100) /100).toFixed(2);
@@ -22,8 +21,8 @@ export default Ember.Component.extend({
   shoppingCart: Ember.inject.service(),
 
   actions: {
-    remove(item) {
-      this.get('shoppingCart').remove(item);
+    remove(index) {
+      this.get('shoppingCart').remove(index);
     }
   }
 });
